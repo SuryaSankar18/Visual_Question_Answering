@@ -9,7 +9,7 @@ st.markdown(
     <style>
     /* Change the background color */
     .stApp {
-        background-color: #4D50FB;  /* Light gray background */
+        background-color: #0c0425;  /* Light gray background */
     }
 
     /* Style the title */
