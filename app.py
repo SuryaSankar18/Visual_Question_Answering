@@ -3,21 +3,37 @@ import streamlit as st
 from PIL import Image
 from transformers import BlipProcessor, BlipForQuestionAnswering
 
-# Custom CSS to change the background and other styles
+# Custom CSS to set an image as the background
 st.markdown(
     """
     <style>
-    /* Change the background color */
+    /* Set an image as the background */
     .stApp {
-        background-color: #040523;  /* Light gray background */
+        background-image: url("https://images.unsplash.com/photo-1506318137071-a8e063b4bec0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2093&q=80");
+        background-size: cover;  /* Cover the entire app */
+        background-position: center;  /* Center the image */
+        background-repeat: no-repeat;  /* Prevent repeating */
+        background-attachment: fixed;  /* Fix the background while scrolling */
+    }
+
+    /* Add a semi-transparent overlay to improve readability */
+    .stApp::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(255, 255, 255, 0.7);  /* White overlay with 70% opacity */
+        z-index: -1;  /* Place the overlay behind the content */
     }
 
     /* Style the title */
     .title {
         text-align: center;
-        color: #FFFC55;
+        color: #FF4B4B;
         font-family: "Helvetica Neue", sans-serif;
-        font-size: 3em;
+        font-size: 2.5em;
         margin-bottom: 20px;
     }
 
@@ -29,7 +45,7 @@ st.markdown(
 
     /* Style buttons */
     .stButton button {
-        background-color: #069dbd;
+        background-color: #FF4B4B;
         color: white;
         border-radius: 10px;
         padding: 10px 20px;
@@ -85,12 +101,12 @@ elif option == "Capture from camera":
 
 # Display the image if available
 if image is not None:
-    st.markdown('<h3 style="color: #e5e500;">Image:</h3>', unsafe_allow_html=True)
+    st.markdown('<h3 style="color: #9467BD;">Image:</h3>', unsafe_allow_html=True)
     st.image(image, caption="Uploaded/Captured Image", use_column_width=True)
 
     # Ask a question about the image
-    st.markdown('<h3 style="color: #31ffe3;">Ask a question about the image:</h3>', unsafe_allow_html=True)
-    question = st.text_input("", key="question")
+    st.markdown('<h3 style="color: #8C564B;">Ask a question about the image:</h3>', unsafe_allow_html=True)
+    question = st.text_input("Enter your question here", key="question")
 
     # Process the image and generate an answer
     if st.button("Get Answer", key="answer_button"):
