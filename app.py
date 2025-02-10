@@ -9,7 +9,7 @@ st.markdown(
     <style>
     /* Set an image as the background */
     .stApp {
-        background-image: url("https://static.vecteezy.com/system/resources/previews/015/746/039/large_2x/three-pink-cubes-with-q-and-a-on-pink-background-with-copy-faq-concepts-q-and-a-question-frequency-inquiries-answers-questions-business-customer-service-and-support-3d-render-illustration-free-photo.jpg");
+        background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFVnKBEA--G2pZtFh3vF96dOHACmVA4O3E6w&s");
         background-size: cover;  /* Cover the entire app */
         background-position: center;  /* Center the image */
         background-repeat: no-repeat;  /* Prevent repeating */
