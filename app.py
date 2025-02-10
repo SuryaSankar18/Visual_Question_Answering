@@ -4,7 +4,7 @@ from PIL import Image
 from transformers import BlipProcessor, BlipForQuestionAnswering
 
 # Set the title of the app
-st.title("Visual Question Answering with BLIP Model")
+st.title("Visual Question Answering")
 
 # Function to load the BLIP model and processor
 @st.cache_resource  # Cache the model to avoid reloading on every interaction
@@ -42,7 +42,7 @@ if image is not None:
     st.image(image, caption="Uploaded/Captured Image", use_column_width=True)
 
     # Ask a question about the image
-    question = st.text_input("Ask a question about the image:", "What is the color of the shirt?")
+    question = st.text_input("Ask a question about the image:", "Enter your question here")
 
     # Process the image and generate an answer
     if st.button("Get Answer"):
