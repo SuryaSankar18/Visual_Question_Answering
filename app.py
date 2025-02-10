@@ -17,7 +17,7 @@ st.markdown(
         text-align: center;
         color: #FFFC55;
         font-family: "Helvetica Neue", sans-serif;
-        font-size: 2.5em;
+        font-size: 3em;
         margin-bottom: 20px;
     }
 
