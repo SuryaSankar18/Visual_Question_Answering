@@ -15,7 +15,7 @@ st.markdown(
     /* Style the title */
     .title {
         text-align: center;
-        color: #c0bd09;
+        color: #FFFC55;
         font-family: "Helvetica Neue", sans-serif;
         font-size: 2.5em;
         margin-bottom: 20px;
