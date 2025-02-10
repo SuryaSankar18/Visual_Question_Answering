@@ -101,11 +101,11 @@ elif option == "Capture from camera":
 
 # Display the image if available
 if image is not None:
-    st.markdown('<h3 style="color: #6e0101;">Image:</h3>', unsafe_allow_html=True)
+    st.markdown('<h3 style="color: #ea2b2b;">Image:</h3>', unsafe_allow_html=True)
     st.image(image, caption="Uploaded/Captured Image", use_column_width=True)
 
     # Ask a question about the image
-    st.markdown('<h3 style="color: #6e0101;">Ask a question about the image:</h3>', unsafe_allow_html=True)
+    st.markdown('<h3 style="color: #ea2b2b;">Ask a question about the image:</h3>', unsafe_allow_html=True)
     question = st.text_input("Enter your question here", key="question")
 
     # Process the image and generate an answer
