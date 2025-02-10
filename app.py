@@ -29,7 +29,7 @@ st.markdown(
 
     /* Style buttons */
     .stButton button {
-        background-color: #FF4B4B;
+        background-color: #069dbd;
         color: white;
         border-radius: 10px;
         padding: 10px 20px;
@@ -85,7 +85,7 @@ elif option == "Capture from camera":
 
 # Display the image if available
 if image is not None:
-    st.markdown('<h3 style="color: #9467BD;">Image:</h3>', unsafe_allow_html=True)
+    st.markdown('<h3 style="color: #e5e500;">Image:</h3>', unsafe_allow_html=True)
     st.image(image, caption="Uploaded/Captured Image", use_column_width=True)
 
     # Ask a question about the image
