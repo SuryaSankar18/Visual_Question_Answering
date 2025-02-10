@@ -89,8 +89,8 @@ if image is not None:
     st.image(image, caption="Uploaded/Captured Image", use_column_width=True)
 
     # Ask a question about the image
-    st.markdown('<h3 style="color: #8C564B;">Ask a question about the image:</h3>', unsafe_allow_html=True)
-    question = st.text_input("Enter your question here", key="question")
+    st.markdown('<h3 style="color: #31ffe3;">Ask a question about the image:</h3>', unsafe_allow_html=True)
+    question = st.text_input("", key="question")
 
     # Process the image and generate an answer
     if st.button("Get Answer", key="answer_button"):
