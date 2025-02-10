@@ -87,7 +87,7 @@ image = None
 
 # Handle image upload
 if option == "Upload an image":
-    st.markdown('<h3 style="color: #6e0101;">Upload an image</h3>', unsafe_allow_html=True)
+    st.markdown('<h3 style="color: #ea2b2b;">Upload an image</h3>', unsafe_allow_html=True)
     uploaded_file = st.file_uploader("Upload an image", type=["jpg", "jpeg", "png"], key="upload")
     if uploaded_file is not None:
         image = Image.open(uploaded_file)
